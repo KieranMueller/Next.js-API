@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "e522bacb-2d8b-41bc-b7cb-9788f67dd42f",
+		"name": "next-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26504106"
+	},
+	"item": [
+		{
+			"name": "Get blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/api/blogs"
+			},
+			"response": []
+		},
+		{
+			"name": "Create blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Mr. Jompers\",\r\n    \"desc\": \"Wonderful Novel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/api/blogs"
+			},
+			"response": []
+		},
+		{
+			"name": "Get blog by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/api/blogs/1713548016214"
+			},
+			"response": []
+		},
+		{
+			"name": "Update blog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/api/blogs/1713548529993"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete blog by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3001/api/blogs/1713548822822"
+			},
+			"response": []
+		}
+	]
+}
